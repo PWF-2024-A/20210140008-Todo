@@ -12,7 +12,9 @@ class TodoController extends Controller
      */
     public function index()
     {
-        return view('todo.index');
+        $todos = Todo::where('user_id', auth()->id())->get();
+        dd($todos->toArray());
+        return view('todo.index', compact('todos'));
     }
 
     /**
