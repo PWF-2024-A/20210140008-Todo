@@ -19,7 +19,7 @@ class TodoFactory extends Factory
         return [
             'user_id' => rand(1, 100),
             'title' => ucwords(fake()->sentence),
-            'its_complete' => rand(0, 1),
+            'is_complete' => rand(0, 1),
         ];
     }
 }

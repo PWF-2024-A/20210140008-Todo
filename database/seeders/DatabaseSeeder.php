@@ -26,7 +26,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'm.ayashal.f@gmail.com',
             'is_admin' => false,
         ]);
-        User::factory(100)->create();
-        Todo::factory(100)->create();
+        User::factory(99)->create();
+        Todo::factory(500)->create();
     }
 }
